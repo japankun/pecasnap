@@ -16,9 +16,10 @@ PeerCastで配信・リレーしているチャンネルの監視を簡略化す
 
 ## 使用方法 / 動作環境
 
-Windows向けに作っています。Windowsではファイルを展開した中にある ***pecasnap.exe*** を実行することで動作を始めます。
+Windows向けに作っています。Windowsではリリースファイルを展開した中にある ***pecasnap.exe*** を実行することで動作します。
+Linux / Macはソースコードをダウンロードして ```npm install``` をしてください。
 
-※軽量化のため Linux / Mac 向けの ffmpeg は削っています。Linux/Macで使用の場合はこちらに ffmpeg の static バイナリを配置してください。npm install ffmpeg-staticで降ってくるものを使用しています。
+>※軽量化のため Linux / Mac 向けの ffmpeg は削っています。Linux/Macで使用の場合はこちらに ffmpeg の static バイナリを配置してください。npm install ffmpeg-staticで降ってくるものを使用しています。
 
 ```bash
 resources\app\node_modules\ffmpeg-static-electron\bin
