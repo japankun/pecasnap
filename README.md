@@ -24,6 +24,9 @@ Windows向けに作っています。Windowsではファイルを展開した中
 resources\app\node_modules\ffmpeg-static-electron\bin
 ```
 
+## 動作画面
+![](https://raw.githubusercontent.com/japankun/pecasnap/master/images/pecasnap.png)
+
 ## ライブラリなど
 
 - ffmpeg
