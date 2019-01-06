@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>PecaSnap</title>
+    <link rel="stylesheet" type="text/css" href="assets/minstyle.io.css">
+    <link rel="stylesheet" type="text/css" href="assets/lity.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/modaal.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/pecasnap.css">
+  </head>
+  <body>
+    <div class="ms-menu">
+      <nav>
+        <li><a href="#" class="ms-active">📹 PS</a></li>
+        <li><a href="#" onclick="location.reload();">🔃</a></li>
+        <li><a href="#" onclick="minimum();">⏫</a></li>
+        <li><a href="#setting" class="setting" onclick="getSetting();">🔧</a></li>
+        <li><a href="#about" class="about">❓</a></li>
+        <li><span id="countdown">00</span></li>
+      </nav>
+    </div>
+
+    <div class="ms-pic ms-rounded ms-text-center" id="live1" style="display:none;">
+    </div>
+
+    <div class="container min">
+      <div class="ms-box">
+          <div class="ms-header">
+            <h2 class="ms-text-size-1"><span class="ms-fw-800">受信中のチャンネル数：</span><span id="chsum"></span></h2>
+          </div>
+          <div class="ms-content">
+            <div class="ms-text">
+              <ul id="chlist" class="ms-list ms-list-none">
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+
+    <div class="min">
+      <div class="ms-alert">
+        <b>受信中</b>
+      </div>
+    </div>
+    <div class="ms-box ms-boxed-none min">
+      <div class="ms-content">
+        <div class="ms-pic ms-rounded ms-text-center" id="live2">
+        </div>
+      </div>
+    </div>
+    <div class="min dark">
+      <div class="ms-alert">
+        <b id="albumname">過去の画像</b>
+      </div>
+      <div class="ms-box ms-boxed-none min">
+          <div class="ms-content">
+            <div class="ms-pic ms-rounded" id="album">
+            </div>
+          </div>
+      </div>
+    </div>
+
+    <div id="about" style="display:none;">
+      <p>PecaSnap Version 0.0.1 by JapanKun</p>
+      <ul class="ms-list ms-border">
+        <li>electron https://electronjs.org/</li>
+        <li>minstyle.io https://minstyle.io/</li>
+        <li>Express https://expressjs.com/ja/</li>
+        <li>ffmpeg-static https://www.npmjs.com/package/ffmpeg-static</li>
+        <li>jQuery https://jquery.com/</li>
+        <li>Modaal https://github.com/humaan/Modaal</li>
+        <li>body-parser https://www.npmjs.com/package/body-parser</li>
+      </ul>
+      <p class="ms-text-right">MADE IN JAPAN</p>
+    </div>
+
+    <div id="setting" style="display:none;">
+      <b>設定</b>
+      <hr>
+      <div class="col-s-6">
+        <label for="peercastip">PeerCastIP</label>
+        <input type="text" value="127.0.0.1" id="peercastip" class="ms-rounded">
+      </div>
+      <div class="col-s-6">
+        <label for="peercastport">Port</label>
+        <input type="text" value="7144" id="peercastport" class="ms-rounded">
+        </div>
+      <button class="ms-btn ms-blue" onclick="setSetting();location.reload();">保存</button>
+      <button class="ms-btn" onclick="$('.setting').modaal('close');">閉じるにはバツを押す</button>
+      <div class="ms-progress" id="progress">
+        <div class="ms-progress-fill ms-green ms-rounded ms-striped" id="progressbar" style="width: 0%;"></div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="assets/jquery-3.1.1.min.js"></script>
+    <script>window.$ = window.jQuery = require('jquery');</script>
+    <script type="text/javascript" src="assets/pecasnap.js"></script>
+    <script type="text/javascript" src="assets/modaal.min.js"></script>
+    <script type="text/javascript" src="assets/lity.min.js"></script>
+    <script>
+    $('.about').modaal();
+    $('.setting').modaal();
+    </script>
+  </body>
+</html>

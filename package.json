@@ -1,0 +1,33 @@
+{
+  "name": "PecaSnap",
+  "version": "0.0.1",
+  "description": "PecaSnap PeerCast SnapShot System",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-packager . --platform=win32 --arch=x64 --ignore=\"(.webp|start.bat|biuld.bat|ffmpeg$|win/ia32/ffmpeg.exe)\" --overwrite"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/japankun/pecasnap.git"
+  },
+  "keywords": [
+    "Electron",
+    "PeerCast"
+  ],
+  "author": "JapanKun",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^3.0.7"
+  },
+  "dependencies": {
+    "electron-store": "^2.0.0",
+    "express": "^4.16.4",
+    "ffmpeg-static-electron": "^2.0.1",
+    "jquery": "^3.3.1"
+  },
+  "bugs": {
+    "url": "https://github.com/japankun/pecasnap/issues"
+  },
+  "homepage": "https://github.com/japankun/pecasnap#readme"
+}
