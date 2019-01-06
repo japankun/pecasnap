@@ -14,6 +14,9 @@ PeerCastで配信・リレーしているチャンネルの監視を簡略化す
 - スクリーンショットはWEBPで保存されます。WEBPのサムネイル表示についてはこちら https://www.gigafree.net/tool/view/WebP-Codec.html
 - 1時間使用すると2MB程度の保存領域を使用します。
 
+## ダウンロード
+[![](https://img.shields.io/github/release/japankun/pecasnap.svg) PecaSnap-v0.0.1-win32-x64-enigma.7z](https://github.com/japankun/pecasnap/releases/download/v0.0.1/PecaSnap-v0.0.1-win32-x64-enigma.7z)
+
 ## 使用方法 / 動作環境
 
 Windows向けに作っています。Windowsではリリースファイルを展開した中にある ***pecasnap.exe*** を実行することで動作します。
